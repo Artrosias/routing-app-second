@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { GraficoComponent } from './grafico/grafico.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'grafico',
     component: GraficoComponent,
+  },
+  {
+    path: 'parent',
+    component: ParentComponent,
   },
 ];
 

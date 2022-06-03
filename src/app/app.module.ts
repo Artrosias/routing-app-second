@@ -11,9 +11,11 @@ import { GraficoComponent } from './grafico/grafico.component';
 import { ChartModule } from 'primeng/chart';
 import { ImageModule } from 'primeng/image';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, GraficoComponent],
+  declarations: [AppComponent, LandingComponent, GraficoComponent, ChildComponent, ParentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
