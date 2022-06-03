@@ -1,0 +1,7 @@
+<p-button routerLink="/grafico" routerLinkActive="active">Grafico</p-button>
+<h1>{{ getValueFromMessageService() }}</h1>
+<div *ngIf="getFoxReady() === true; else elseBlock">
+  <p-image src="{{ getFox() }}" alt="Image" width="250"></p-image>
+</div>
+<ng-template #elseBlock><p-progressSpinner></p-progressSpinner> </ng-template>
+<h3 *ngFor="let number of getValueFromNumericService()">{{ number }}</h3>
